@@ -52,6 +52,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -97,7 +98,7 @@ ul li {
     margin-bottom: 10px;
 }
 
-.experience-item, .project-item {
+.experience-item, .project-item, .education-item, .certification-item {
     margin-bottom: 20px;
 }
 
@@ -118,7 +119,8 @@ h3 {
     width: 30%;
     box-sizing: border-box;
     text-align: center;
-    text-decoration: none; /* Remove default link styling */
+    text-decoration: none;
+    color: inherit;
 }
 
 .card h3 {
@@ -135,13 +137,17 @@ h3 {
 }
 
 @media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    
     header .container {
-        flex-direction: column;
         text-align: center;
     }
 
     header .contact {
         margin-top: 10px;
+        text-align: center;
     }
 
     nav ul {
@@ -158,5 +164,33 @@ h3 {
 
     .card {
         width: 100%;
+    }
+
+    section h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .experience-item, .project-item, .education-item, .certification-item {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header .animated-text {
+        font-size: 20px;
+        height: auto;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+    
+    .experience-item, .project-item, .education-item, .certification-item {
+        margin-bottom: 10px;
     }
 }
