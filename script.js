@@ -1,4 +1,4 @@
-const roles = ["Backend Engineer", "Machine Learning Engineer", "DevOps Engineer"];
+const roles = ["Backend Engineer", "Machine Learning Engineer", "DevOps Engineer","Crypto Currency Enthusiast" ,"ML Researcher"];
 let roleIndex = 0;
 let charIndex = 0;
 const roleElement = document.getElementById("role");
