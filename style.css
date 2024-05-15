@@ -20,28 +20,28 @@ header {
     border-bottom: #3D5AFE 3px solid;
 }
 
-header a {
-    color: #3D5AFE;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
 header h1 {
     font-size: 32px;
     margin-bottom: 5px;
 }
 
-header p {
-    font-size: 16px;
-    margin: 0;
+header .animated-text {
+    font-size: 24px;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+header .animated-text span {
+    position: absolute;
+    animation: slide 8s infinite;
+}
+
+@keyframes slide {
+    0% { top: 0; }
+    33% { top: 0; }
+    66% { top: -30px; }
+    100% { top: -30px; }
 }
 
 header .contact {
@@ -51,6 +51,34 @@ header .contact {
 header .contact a {
     color: #3D5AFE;
     margin-right: 10px;
+}
+
+nav {
+    background: #1F1F1F;
+    border-top: #3D5AFE 3px solid;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #E0E0E0;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px 0;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: #3D5AFE;
 }
 
 section {
@@ -96,5 +124,13 @@ h3 {
 
     header .contact {
         margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
     }
 }
