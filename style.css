@@ -1,9 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
+    background-color: #121212;
+    color: #E0E0E0;
 }
 
 .container {
@@ -13,49 +14,34 @@ body {
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #77aaff 3px solid;
+    background: #1F1F1F;
+    color: #E0E0E0;
+    padding: 20px 0;
+    border-bottom: #3D5AFE 3px solid;
 }
 
 header a {
-    color: #fff;
+    color: #3D5AFE;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
-}
-
-header ul {
-    padding: 0;
-    list-style: none;
-}
-
-header li {
-    float: left;
-    display: inline;
-    padding: 0 20px 0 20px;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-header h1, header p {
-    margin: 0;
-    padding: 0;
+    flex-wrap: wrap;
 }
 
 header h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 32px;
+    margin-bottom: 5px;
 }
 
 header p {
-    font-size: 14px;
+    font-size: 16px;
+    margin: 0;
 }
 
 header .contact {
@@ -63,21 +49,24 @@ header .contact {
 }
 
 header .contact a {
-    color: #77aaff;
+    color: #3D5AFE;
     margin-right: 10px;
 }
 
 section {
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 section h2 {
     margin-top: 0;
+    border-bottom: 2px solid #3D5AFE;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 footer {
-    background: #333;
-    color: #fff;
+    background: #1F1F1F;
+    color: #E0E0E0;
     text-align: center;
     padding: 10px 0;
 }
@@ -97,4 +86,15 @@ ul li {
 
 h3 {
     margin: 0;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .contact {
+        margin-top: 10px;
+    }
 }
