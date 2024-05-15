@@ -17,7 +17,7 @@ header {
     background: #1F1F1F;
     color: #E0E0E0;
     padding: 20px 0;
-    border-bottom: #3D5AFE 3px solid;
+    border-bottom: #FFFF33 3px solid;
 }
 
 header h1 {
@@ -49,13 +49,13 @@ header .contact {
 }
 
 header .contact a {
-    color: #3D5AFE;
+    color: #FFFF33;
     margin-right: 10px;
 }
 
 nav {
     background: #1F1F1F;
-    border-top: #3D5AFE 3px solid;
+    border-top: #FFFF33 3px solid;
 }
 
 nav ul {
@@ -78,7 +78,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #3D5AFE;
+    color: #FFFF33;
 }
 
 section {
@@ -87,7 +87,7 @@ section {
 
 section h2 {
     margin-top: 0;
-    border-bottom: 2px solid #3D5AFE;
+    border-bottom: 2px solid #FFFF33;
     display: inline-block;
     padding-bottom: 5px;
 }
