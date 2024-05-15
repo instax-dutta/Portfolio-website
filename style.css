@@ -105,6 +105,35 @@ h3 {
     margin: 0;
 }
 
+.app-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #1F1F1F;
+    border: 2px solid #FFFF33;
+    padding: 20px;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none; /* Remove default link styling */
+}
+
+.card h3 {
+    color: #FFFF33;
+    text-decoration: none;
+}
+
+.card p {
+    color: #E0E0E0;
+}
+
+.card:hover {
+    background: #303030;
+}
+
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;
@@ -121,5 +150,13 @@ h3 {
 
     nav ul li {
         margin: 10px 0;
+    }
+
+    .app-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
     }
 }
