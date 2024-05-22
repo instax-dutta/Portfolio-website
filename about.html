@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+    <nav class="sticky">
         <div class="container">
+            <img src="logo.png" alt="Logo" class="logo-left">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
@@ -21,7 +22,7 @@
         </div>
     </nav>
 
-    <section id="about">
+    <section id="about" class="parallax" style="background-image: url('background.jpg');">
         <div class="container">
             <h2>About Me</h2>
             <p>I am a highly motivated Computer Science student with a proven track record of demonstrated initiative and technical proficiency in Python, machine learning, and DevOps. 📚💻 I am passionate about harnessing the power of technology to solve real-world problems and drive innovation. 🚀🔧</p>
@@ -33,9 +34,17 @@
     </section>
 
     <footer>
+        <div class="footer-border"></div>
         <div class="container">
             <p>&copy; 2024 Sai Dutta Abhishek Dash</p>
+            <div class="contact">
+                <a href="mailto:contact@sdad.pro">contact@sdad.pro</a> |
+                <a href="https://linkedin.com/in/sdabhishekdash" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/instax-dutta" target="_blank">GitHub</a>
+            </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

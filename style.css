@@ -15,7 +15,7 @@ body {
 
 header {
     background: #1F1F1F;
-    color: #E0E0E0;
+    color: #FFD700; /* Gold color for better contrast */
     padding: 20px 0;
 }
 
@@ -23,6 +23,7 @@ header h1 {
     font-size: 32px;
     margin-bottom: 5px;
     margin-left: 15px;
+    color: #FFD700; /* Gold color for better contrast */
 }
 
 header .animated-text {
@@ -32,6 +33,58 @@ header .animated-text {
     position: relative;
     white-space: nowrap;
     margin-left: 15px;
+    color: #FFD700; /* Gold color for better contrast */
+}
+
+/* Logo styling */
+.logo-left {
+    height: 50px;
+    margin-right: 20px;
+    float: left;
+    margin-top: 10px;
+}
+
+/* Sticky navigation */
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #1F1F1F;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Transition for links */
+nav ul li a {
+    transition: color 0.3s;
+}
+
+/* Hover effect for links */
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Smoother text animation */
+.animated-text span {
+    transition: all 0.5s ease-in-out;
+}
+
+/* Social media icons */
+.contact a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #FFD700;
+}
+
+/* Card hover effect */
+.card:hover {
+    background: #303030;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
 }
 
 nav {
@@ -46,6 +99,7 @@ nav ul {
     justify-content: flex-end;
     flex-wrap: wrap;
     margin-right: 15px;
+    margin-left: auto; /* Ensure navigation items align to the right */
 }
 
 nav ul li {
@@ -60,17 +114,14 @@ nav ul li a {
     display: block;
 }
 
-nav ul li a:hover {
-    color: #FFFF33;
-}
-
 section {
     padding: 40px 0;
+    color: #FFD700; /* Gold color for better contrast */
 }
 
 section h2 {
     margin-top: 0;
-    border-bottom: 2px solid #FFFF33;
+    border-bottom: 2px solid #FFD700;
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -89,12 +140,12 @@ footer .contact {
 }
 
 footer .contact a {
-    color: #FFFF33;
+    color: #FFD700;
     margin: 0 10px;
 }
 
 .footer-border {
-    background: #FFFF33;
+    background: #FFD700;
     height: 3px;
     width: 100%;
     position: absolute;
@@ -127,7 +178,7 @@ h3 {
 
 .card {
     background: #1F1F1F;
-    border: 2px solid #FFFF33;
+    border: 2px solid #FFD700;
     padding: 20px;
     width: 30%;
     box-sizing: border-box;
@@ -137,7 +188,7 @@ h3 {
 }
 
 .card h3 {
-    color: #FFFF33;
+    color: #FFD700;
     text-decoration: none;
 }
 
@@ -147,6 +198,14 @@ h3 {
 
 .card:hover {
     background: #303030;
+}
+
+/* Parallax effect */
+.parallax {
+    background: url('background.jpg') no-repeat fixed center;
+    background-size: cover;
+    padding: 100px 0;
+    color: #FFD700; /* Gold color for better contrast */
 }
 
 @media (max-width: 768px) {
