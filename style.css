@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #121212;
-    color: #E0E0E0;
+    color: #FFFFFF;
 }
 
 .container {
@@ -15,7 +15,7 @@ body {
 
 header {
     background: #1F1F1F;
-    color: #E0E0E0;
+    color: #FFFFFF;
     padding: 20px 0;
 }
 
@@ -60,7 +60,7 @@ nav ul li a {
 
 /* Hover effect for links */
 nav ul li a:hover {
-    color: #FFFF33;
+    color: #FFD700;
 }
 
 /* Smoother text animation */
@@ -75,7 +75,7 @@ nav ul li a:hover {
 }
 
 .contact a:hover {
-    color: #FFFF33;
+    color: #FFD700;
 }
 
 /* Card hover effect */
@@ -105,7 +105,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #E0E0E0;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 16px;
     padding: 15px 0;
@@ -118,14 +118,14 @@ section {
 
 section h2 {
     margin-top: 0;
-    border-bottom: 2px solid #FFFF33;
+    border-bottom: 2px solid #FFD700;
     display: inline-block;
     padding-bottom: 5px;
 }
 
 footer {
     background: #1F1F1F;
-    color: #E0E0E0;
+    color: #FFFFFF;
     text-align: center;
     padding: 10px 0;
     position: relative;
@@ -137,12 +137,12 @@ footer .contact {
 }
 
 footer .contact a {
-    color: #FFFF33;
+    color: #FFD700;
     margin: 0 10px;
 }
 
 .footer-border {
-    background: #FFFF33;
+    background: #FFD700;
     height: 3px;
     width: 100%;
     position: absolute;
@@ -175,7 +175,7 @@ h3 {
 
 .card {
     background: #1F1F1F;
-    border: 2px solid #FFFF33;
+    border: 2px solid #FFD700;
     padding: 20px;
     width: 30%;
     box-sizing: border-box;
@@ -185,12 +185,12 @@ h3 {
 }
 
 .card h3 {
-    color: #FFFF33;
+    color: #FFD700;
     text-decoration: none;
 }
 
 .card p {
-    color: #E0E0E0;
+    color: #FFFFFF;
 }
 
 .card:hover {
@@ -202,7 +202,7 @@ h3 {
     background: url('background.jpg') no-repeat fixed center;
     background-size: cover;
     padding: 100px 0;
-    color: #E0E0E0;
+    color: #FFFFFF;
 }
 
 @media (max-width: 768px) {
