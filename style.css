@@ -15,7 +15,7 @@ body {
 
 header {
     background: #1F1F1F;
-    color: #FFD700; /* Gold color for better contrast */
+    color: #E0E0E0;
     padding: 20px 0;
 }
 
@@ -23,7 +23,6 @@ header h1 {
     font-size: 32px;
     margin-bottom: 5px;
     margin-left: 15px;
-    color: #FFD700; /* Gold color for better contrast */
 }
 
 header .animated-text {
@@ -33,7 +32,6 @@ header .animated-text {
     position: relative;
     white-space: nowrap;
     margin-left: 15px;
-    color: #FFD700; /* Gold color for better contrast */
 }
 
 /* Logo styling */
@@ -62,7 +60,7 @@ nav ul li a {
 
 /* Hover effect for links */
 nav ul li a:hover {
-    color: #FFD700;
+    color: #FFFF33;
 }
 
 /* Smoother text animation */
@@ -77,7 +75,7 @@ nav ul li a:hover {
 }
 
 .contact a:hover {
-    color: #FFD700;
+    color: #FFFF33;
 }
 
 /* Card hover effect */
@@ -116,12 +114,11 @@ nav ul li a {
 
 section {
     padding: 40px 0;
-    color: #FFD700; /* Gold color for better contrast */
 }
 
 section h2 {
     margin-top: 0;
-    border-bottom: 2px solid #FFD700;
+    border-bottom: 2px solid #FFFF33;
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -140,12 +137,12 @@ footer .contact {
 }
 
 footer .contact a {
-    color: #FFD700;
+    color: #FFFF33;
     margin: 0 10px;
 }
 
 .footer-border {
-    background: #FFD700;
+    background: #FFFF33;
     height: 3px;
     width: 100%;
     position: absolute;
@@ -178,7 +175,7 @@ h3 {
 
 .card {
     background: #1F1F1F;
-    border: 2px solid #FFD700;
+    border: 2px solid #FFFF33;
     padding: 20px;
     width: 30%;
     box-sizing: border-box;
@@ -188,7 +185,7 @@ h3 {
 }
 
 .card h3 {
-    color: #FFD700;
+    color: #FFFF33;
     text-decoration: none;
 }
 
@@ -205,7 +202,7 @@ h3 {
     background: url('background.jpg') no-repeat fixed center;
     background-size: cover;
     padding: 100px 0;
-    color: #FFD700; /* Gold color for better contrast */
+    color: #E0E0E0;
 }
 
 @media (max-width: 768px) {
