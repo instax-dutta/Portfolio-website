@@ -14,6 +14,81 @@ body {
   background: yellow;
   color: red;
 }
+
+.nav-bar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  width: 100%;
+  margin-top: 0;
+  position: fixed;
+  background-color: #1f1f1f;
+  z-index: 99;
+}
+
+.open-menu,.close-menu{
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 10%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.open-menu>img{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 20px;
+
+}
+.close-menu img{
+  height: 20px;
+}
+.logo img{
+  float: left;
+  width: 120px;
+  filter: drop-shadow(0px 0px 15px red);
+}
+.menu{
+  display: flex;
+  margin-right: 30px;
+}
+.menu li{
+  /* border: 2px solid red; */
+  display: inline-block;
+  margin: 0px 15px;
+  
+}
+.menu li a{
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight:bold;
+}
+.menu li a:hover{
+  background-clip: text;
+  background: linear-gradient(90deg,red,aqua);
+  -webkit-background-clip: text;
+  color: transparent;
+
+}
+.menu li a::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 0%;
+  background: white;
+  transition: 0.5s ease-in-out;
+}
+.menu li a:hover::after{
+  background: linear-gradient(90deg,red,aqua);
+  width: 100%;
+}
 .container {
   margin: auto;
   padding: 15px;
@@ -26,9 +101,34 @@ body {
 .parallax {
   overflow: hidden;
   position: relative;
-  padding: 20px 0;
+  padding: 20px 15px;
   color: #ffffff;
 }
+#about .container{
+  
+  padding-top: 120px;
+}
+#skills .container{
+  
+  padding-top: 120px;
+}
+#experience .container{
+  
+  padding-top: 120px;
+}
+#projects .container{
+  
+  padding-top: 120px;
+}
+#education .container{
+  
+  padding-top: 120px;
+}
+#certifications .container{
+  
+  padding-top: 120px;
+}
+
 .parallax .background-image {
   filter: blur(4px);
   width: 100%;
@@ -49,12 +149,15 @@ body {
   margin-top: 100px;
 }
 header {
+  display: flex;
+  flex-direction:column ;
   color: #ffffff;
   
 }
 header > .container {
+  width: 100%;
   background: #1f1f1f;
-  margin-top: 120px;
+  margin-top: 100px;
   padding: 15px;
 }
 header h1 {
@@ -72,71 +175,8 @@ header .animated-text {
   /* text-shadow:0px 0px 2px palevioletred; */
   color: rgb(226, 22, 245);
 }
-/* Logo styling */
-.logo-left {
-  height: 80px;
-  /* margin-right: 20px; */
-  float: left;
-  /* margin-top: 10px; */
-  filter: drop-shadow(0px 0px 15px red);
-}
 
-/* Sticky navigation */
-.sticky {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  background: black;
-  padding: 10px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 0;
-  overflow: hidden;
-  z-index: 9999;
-}
-.sticky .container {
-  margin: 0;
-  background: #1f1f1f;
-  display: flex;
-  align-items: center;
-  height: 4em;
-  overflow: hidden;
-}
-nav {
-  top: 0px;
-  background: #1f1f1f;
-  text-align: right;
-}
 
-nav ul {
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  margin:0px 6px;
-  margin-left: auto;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 16px;
-  padding: 15px 0;
-  display: block;
-  transition: color 0.3s;
-}
-
-/* Hover effect for links */
-nav ul li a:hover {
-  background: linear-gradient(90deg, rgb(255, 0, 43), aqua);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
 
 /* Smoother text animation */
 .animated-text span {
@@ -161,14 +201,15 @@ section {
 
 section h2 {
   margin-top: 0;
-  border-bottom: 2px solid #ffd700;
+  /* border-bottom: 2px solid #ffd700; */
   display: inline-block;
   padding-bottom: 5px;
 }
 hr{
-  background: #ffd700;
+  background:rgb(253,255,0);
   height: 3px;
   width: 100%;
+  left: 0;
   
 }
 footer {
@@ -249,9 +290,14 @@ h3 {
 
 @media (max-width: 768px) {
   .container {
-    width: 90%;
+    width: 100%;
   }
-
+  #hamburger{
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    display: block;
+  }
   header > .container {
     text-align: center;
   }
@@ -261,10 +307,11 @@ h3 {
     text-align: center;
   }
 
-  nav ul {
+  /* nav ul {
+    display: none;
     flex-direction: column;
     margin-right: 0;
-  }
+  } */
 
   nav ul li {
     margin: 10px 0;
@@ -292,10 +339,47 @@ h3 {
 }
 
 @media (max-width: 480px) {
+  html,body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  header > .container {
+    /* width: 100%; */
+    /* background: #1f1f1f; */
+    margin-top: 110px;
+    /* padding: 15px; */
+  }
+  
   header h1 {
     font-size: 24px;
   }
+  .logo img{
+    scale: 0.9;
+  }
+  .menu{
+    position: fixed;
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 70%;
+    height: 100vh;
+    top: 0;
+    transition:all 0.5s linear;
+    background: #1f1f1f;
+    z-index: 100;
 
+  }
+  .open-menu,.close-menu{
+    display: block;
+  }
+  .open-menu img{
+    margin-right: 20px;
+  }
   header .animated-text {
     font-size: 20px;
     height: auto;
@@ -304,7 +388,10 @@ h3 {
   nav ul li a {
     font-size: 14px;
   }
-
+  .card{
+    width: 80%;
+  }
+  
   .experience-item,
   .project-item,
   .education-item,

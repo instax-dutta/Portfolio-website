@@ -27,3 +27,14 @@ function deleteRole() {
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(typeRole, 1000);
 });
+
+document.querySelector(".open-menu").addEventListener("click",function(){
+    document.querySelector(".menu").style.right = "-30px"
+    document.querySelector(".menu").style.visibility = "visible"
+
+})
+
+document.querySelector(".close-menu").addEventListener("click",function(){
+    document.querySelector(".menu").style.right = "-100%"
+})
+

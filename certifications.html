@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="sticky">
-        <div class="container">
-            <img src="logo.png" alt="Logo" class="logo-left">
-            <ul>
+    <nav>
+        <ul class="nav-bar">
+            <li class="logo"><a href="index.html"><img src="/logo.png" alt="Logo"></a></li>
+            <span class="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="skills.html">Skills</a></li>
@@ -18,14 +18,17 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="certifications.html">Certifications</a></li>
-            </ul>
-        </div>
+                <label for="check" class="close-menu"><img src="./cross-50.png" alt="" style="filter: invert(100%);"></label>
+            </span>
+            <label for="check" class="open-menu"><img src="./hamburger-50.png" alt="" style="filter: invert(100%);"></label>
+        </ul>
     </nav>
 
     <section id="certifications" class="parallax">
         <img src="/background.jpg" class="background-image" alt="background image">
         <div class="container">
             <h2>Certifications</h2>
+            <hr style="margin-top: -10px;height:2px">
             <ul>
                 <li>Project Management (March 2024) from CareerNinja | LearnTube</li>
                 <li>Introduction to Python (April 2024) from Kaggle</li>
