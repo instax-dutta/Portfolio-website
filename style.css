@@ -101,7 +101,7 @@ body {
 .parallax {
   overflow: hidden;
   position: relative;
-  padding: 20px 15px;
+  padding: 20px;
   color: #ffffff;
 }
 #about .container{
@@ -210,6 +210,7 @@ hr{
   height: 3px;
   width: 100%;
   left: 0;
+  right: 10px;
   
 }
 footer {
@@ -366,7 +367,7 @@ h3 {
     align-items: center;
     gap: 20px;
     padding: 20px;
-    width: 70%;
+    width: 30%;
     height: 100vh;
     top: 0;
     transition:all 0.5s linear;
