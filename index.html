@@ -1,104 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai Dutta Abhishek Dash - Home</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon - Developer Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-    <!-- Open Graph Metadata -->
-    <meta property="og:title" content="Sai Dutta Abhishek Dash - Portfolio">
-    <meta property="og:description" content="Hi, I'm Sai Dutta Abhishek Dash, a highly motivated Computer Science student with a passion for building innovative software solutions.">
-    <meta property="og:type" content="website">
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #1c1c1c, #343434);
+      color: #fff;
+      overflow: hidden;
+    }
 
-    <!-- Twitter Card Metadata -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sai Dutta Abhishek Dash - Portfolio">
-    <meta name="twitter:url" content="http://sdad.pro">
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
 
-    <!-- Additional Meta Tags -->
-    <meta name="description" content="Hi, I'm Sai Dutta Abhishek Dash, a highly motivated Computer Science student with a passion for building innovative software solutions.">
-    <meta name="keywords" content="Sai Dutta Abhishek Dash, Portfolio, Computer Science, Python, Machine Learning, DevOps">
-    <meta name="author" content="Sai Dutta Abhishek Dash">
+    h1 {
+      font-size: 5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      animation: glitch 1.5s infinite;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .loader {
+      width: 80px;
+      height: 80px;
+      border: 8px solid #fff;
+      border-top-color: transparent;
+      border-radius: 50%;
+      animation: rotate 1s linear infinite;
+    }
+
+    @keyframes glitch {
+      0%, 100% {
+        text-shadow: 0.05em 0 0 rgba(255, 255, 255, 0.75), -0.05em 0 0 rgba(0, 255, 211, 0.75);
+      }
+      25% {
+        text-shadow: 0.05em 0 0 rgba(0, 255, 211, 0.75), -0.05em 0 0 rgba(255, 255, 255, 0.75);
+      }
+      50% {
+        text-shadow: 0.05em 0 0 rgba(255, 255, 255, 0.75), -0.05em 0 0 rgba(0, 255, 211, 0.75);
+      }
+      75% {
+        text-shadow: 0.05em 0 0 rgba(0, 255, 211, 0.75), -0.05em 0 0 rgba(255, 255, 255, 0.75);
+      }
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-
-        <nav>
-            <ul class="nav-bar">
-                <li class="logo"><a href="index.html"><img src="/logo.png" alt="Logo"></a></li>
-                <span class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="certifications.html">Certifications</a></li>
-                    <label for="check" class="close-menu"><img src="./cross-50.png" alt="" style="filter: invert(100%);"></label>
-                </span>
-                <label for="check" class="open-menu"><img src="./hamburger-50.png" alt="" style="filter: invert(100%);"></label>
-            </ul>
-        </nav>
-        <!-- <nav class="sticky">
-            <div class="container">
-                <img src="logo.png" alt="Logo" class="logo-left">
-                <ul class="ul">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="certifications.html">Certifications</a></li>
-                </ul>
-                <img src="/hamburger-50.png" id="hamburger" alt="hamburger" style="filter:invert(100%); height:30px">
-            </div>
-        </nav> -->
-        <div class="container">
-            <h1>Hi, I'm Sai Dutta Abhishek Dash</h1>
-            <div class="animated-text">
-                <span>I am a </span><span id="role"></span>
-            </div>
-        </div>
-    </header>
-
-    <section id="home" class="parallax">
-        <img src="/background.jpg" class="background-image" alt="background image">
-        <div class="container">
-            <h2>Welcome to My Portfolio</h2>
-            <hr style="margin: -10px;height:2px;">
-            <p>Hello! I'm Sai Dutta Abhishek Dash, a highly motivated Computer Science student with a passion for building innovative software solutions.</p>
-            <p>💻 <strong>Skills at the Core:</strong></p>
-            <ul>
-                <li><strong>Python:</strong> Experienced with Flask and Django for building robust web applications.</li>
-                <li><strong>JavaScript:</strong> Skilled in Node.js, Discord.js, and Express.js for front-end and back-end development.</li>
-                <li><strong>Machine Learning:</strong> Utilizing NumPy, Matplotlib, scikit-learn, and Pandas to tackle real-world problems with AI.</li>
-                <li><strong>DevOps:</strong> Proficient in AWS, Git, CI/CD, GCP, Azure, Bash scripting, Linux, and Docker for streamlined deployment.</li>
-            </ul>
-            <p>🚀 <strong>Startup Founder Experience:</strong> My entrepreneurial drive led me to create a game server hosting company. Through this venture, I gained hands-on experience in:</p>
-            <ul>
-                <li><strong>Technical Leadership:</strong> Overseeing technical implementation and infrastructure.</li>
-                <li><strong>Business Operations:</strong> Understanding operational and strategic aspects of a startup.</li>
-            </ul>
-            <p>🛠️ <strong>Project Approach:</strong> I prioritize clean, efficient code, user-friendly design, and impactful solutions. Problem-solving and adaptability are key traits in my work.</p>
-            <p>💡 <strong>Beyond the Code:</strong> I'm always exploring new technologies and believe in the power of collaboration to drive positive change.</p>
-        </div>
-    </section>
-
-    <hr>
-    <footer>
-        <!-- <div class="footer-border"></div> -->
-        <div class="container">
-            <p>&copy; 2024 Sai Dutta Abhishek Dash</p>
-            <div class="contact">
-                <a href="mailto:contact@sdad.pro">contact@sdad.pro</a> |
-                <a href="https://linkedin.com/in/sdabhishekdash" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/instax-dutta" target="_blank">GitHub</a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <div class="container">
+    <h1>Coming Soon !</h1>
+    <p>The Site is Under Construction !</p>
+    <div class="loader"></div>
+  </div>
 </body>
 </html>
